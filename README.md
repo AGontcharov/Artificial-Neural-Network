@@ -3,7 +3,7 @@
 
 ![](http://futurehumanevolution.com/wp-content/uploads/Artificial-Intelligence-Neural-Network-Nodes.jpg)
 
-An Artifical Neural Network implemented from scratch based on the neural structure of the human brain using Python and the Numpy library. Features (set of input) from a trainning data file are sent to the input nodes of the neural network. The neural network is then trained over a number of epochs adjusting the weights for its connection based on the actual output through forward and back propagation. Finally, after being trained the testing data is then used as input to the neural network and an output is spit back on a scale of 0 to 1.
+An Artifical Neural Network implemented from scratch based on the neural structure of the human brain using Python and the Numpy library. Features (set of input) from a trainning data file are sent to the input nodes of the neural network. The neural network is then trained over a number of epochs adjusting the weights for its connections based on the actual output through forward and back propagation. Through backpropagation the neural network figures out which nodes are to blame for the error in the network and adjust the weights of the connection betwene the nodes accordingly. Finally, after being trained the testing data is then used as input to the neural network and an output is spit back on a scale of 0 to 1.
 
 ## Installation
 
