@@ -1,6 +1,8 @@
 # Artificial-Neural-Network
 > A working artificial brain
 
+![](http://futurehumanevolution.com/wp-content/uploads/Artificial-Intelligence-Neural-Network-Nodes.jpg)
+
 An Artifical Neural Network implemented from scratch based on the neural structure of the human brain using Python and the Numpy library. Features (set of input) from a trainning data file are sent to the input nodes of the neural network. The neural network is then trained over a number of epochs adjusting the weights for its connection based on the actual output through forward and back propagation. Finally, after being trained the testing data is then used as input to the neural network and an output is spit back on a scale of 0 to 1.
 
 ## Installation
@@ -20,7 +22,20 @@ Windows:
 ```sh
 Not yet available
 ```
-##Running
+## Configuration
+
+The Neural Network can be tuned to achieve better (or worse) results by modifying some of the control variables located inside NeuralNetwork.py
+
+By default these control values have the following values:
+
+* Learning Rate = 0.5
+* Momentum = 0.01
+* Maximum Error toleration = 0.00001
+* Maximum number of epoch = 1000
+
+The rest of the variables can be changed when the program is executed.
+
+## Running
 
 The Artificial Neural Network accepts a number of arguments that must be supplied to it and are listed in the following order:
 
