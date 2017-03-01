@@ -56,6 +56,11 @@ Linux & OS X:
 ./NeuralNetwork.py [arg1] [arg2] [arg3] [arg4] [arg5]
 ```
 
+The output produced on the screen follow this format:
+```
+[inpute node values], [desired output node values], [actual output node values]
+```
+
 ## Usage Example
 
 ## Meta
