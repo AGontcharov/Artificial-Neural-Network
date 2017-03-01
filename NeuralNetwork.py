@@ -182,13 +182,10 @@ if __name__ == "__main__":
 	with open(sys.argv[5], 'rb') as testFile:
 		dataReader = csv.reader(testFile, delimiter=',')
 		for row in dataReader:
-			#print row
 			simulation.inputNodes = np.asarray(row[:-3])
 			simulation.inputNodes = simulation.inputNodes.astype(float)
 			simulation.desiredOutput = np.asarray(row[-3:])
 			simulation.desiredOutput = simulation.desiredOutput.astype(float)
-			#print simulation.inputNodes
-			#print simulation.desiredOutput
 			simulation.forwardPropagation()
  
 			for values in simulation.inputNodes:
@@ -199,8 +196,3 @@ if __name__ == "__main__":
 				sys.stdout.write('{0}, '.format(values))
 			sys.stdout.write('{0}'.format(simulation.outputNodes[-1]))
 			print
-
-	"""if simulation.desiredOutput == int(round(simulation.outputNodes)):
-		print("correct")
-	else:
-		print("incorrect")"""
