@@ -6,9 +6,9 @@ import csv
 
 class NeuralNetwork():
 
-	def __init__(self, trainingDataSet, inputNodes, hiddenNodes, outputNodes, learningRate,  momentum):
-		self.learningRate = learningRate
-		self.momentum = momentum
+	def __init__(self, trainingDataSet, inputNodes, hiddenNodes, outputNodes):
+		self.learningRate = 0.5
+		self.momentum = 0.01
 		self.inputNodes = np.zeros(inputNodes)
 		self.hiddenNodes = np.zeros(hiddenNodes)
 		self.outputNodes = np.zeros(outputNodes)
@@ -68,13 +68,10 @@ class NeuralNetwork():
 				np.random.shuffle(sampleSet)
 				pattern = sampleSet[0]
 
-				#Divide pattern into input and output portion
+				# Divide pattern into input and output portion
 				self.inputNodes = np.copy(pattern[:-3])
 				self.desiredOutput = np.copy(pattern[-3:])
 				sampleSet = np.delete(sampleSet, 0, axis = 0)
-
-				#print self.inputNodes
-				#print self.desiredOutput
 
 				# Invoke forward propagation followed by back propagation
 				self.forwardPropagation()
@@ -176,7 +173,7 @@ if __name__ == "__main__":
 	#print trainingDataSet
 	trainingDataSet = trainingDataSet.astype(float)
 
-	simulation = NeuralNetwork(trainingDataSet, inputNodes, hiddenNodes, outputNodes, 0.5, 0.01)
+	simulation = NeuralNetwork(trainingDataSet, inputNodes, hiddenNodes, outputNodes)
 	#print simulation.trainingDataSet
 
 	simulation.trainBP()

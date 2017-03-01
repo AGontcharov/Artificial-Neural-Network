@@ -56,6 +56,8 @@ Linux & OS X:
 ./NeuralNetwork.py [arg1] [arg2] [arg3] [arg4] [arg5]
 ```
 
+## Usage Example
+
 ## Meta
 
 Alexander Gontcharov – alexander.goncharov@gmail.com
