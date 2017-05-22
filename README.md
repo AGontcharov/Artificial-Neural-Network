@@ -1,4 +1,4 @@
-# Artificial-Neural-Network
+# Artificial Neural Network
 > A working artificial brain
 
 ![](http://futurehumanevolution.com/wp-content/uploads/Artificial-Intelligence-Neural-Network-Nodes.jpg)
