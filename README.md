@@ -58,7 +58,7 @@ Linux & OS X:
 
 The output produced on the screen follow this format:
 ```
-[input node values], [desired output node values], [actual output node values]
+input node values, desired output node values, actual output node values
 ```
 
 ## Usage Example
