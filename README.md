@@ -13,7 +13,7 @@ Linux & OS X:
 
 ```sh
 git clone https://github.com/AGontcharov/Artificial-Neural-Network.git
-cd Artificial-Neural-Network/
+cd Artificial-Neural-Network
 chmod u+x NeuralNetwork.py
 ```
 
